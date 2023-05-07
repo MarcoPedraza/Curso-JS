@@ -28,8 +28,12 @@ class Perro extends Animal {             //Esto recoge todos los datos de la cla
         alert("WAW")
     }
 
-    set modificarRaza(newName){
+    set setRaza(newName){
         this.raza = newName;
+    }
+
+    get getRaza(){
+        return this.raza
     }
 }
 
@@ -54,7 +58,7 @@ let pajaro = new Animal("pajaro",1,"verde")
 document.write(gato.info)
 document.write(pajaro.info)*/   //Todo esto se puede hacer con un metodo(funcion dentro de la clase)
 
-perro.modificarRaza = "Pedro"
+perro.setRaza = "Pedro"
 document.write(perro.raza)
 
 // perro.ladrar();
